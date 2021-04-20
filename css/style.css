@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  font-family: 'montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(34, 216, 185);
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+
+h1 {
+  margin-left: 100px;
+  color: white;
+}
+
+header p {
+  margin-right: 50px;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: teal;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+header p:hover {
+  background-color: rgb(255, 255, 255);
+  color: teal;
+  position: relative;
+}
+
+header p:hover::before {
+  content: "Comprar";
+  display: block;
+  background-color: white;
+  width: 80px;
+  height: 20px;
+  position: absolute;
+  left: -100px;
+  font-size: 15px;
+  border-radius: 3px;
+  top: 5px;
+}
+
+main {
+  margin: 60px 40px 20px 90px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+}
+
+#productos li {
+  background-color: rgb(246, 246, 246);
+  width: 250px;
+  height: 150px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 7px;
+  box-shadow: none;
+  transition: box-shadow .3s;
+}
+
+#productos li:hover {
+  box-shadow: -2px 3px 37px -8px rgba(0,0,0,0.32);
+  
+}
+
+#productos {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.botonAgregar {
+  background-color: rgb(34, 216, 185);
+  padding: 10px;
+  display: block;
+  color: white;
+  cursor: pointer;
+  transition: background-color .3s;
+  text-align: center;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.botonAgregar:hover {
+  background-color: teal;
+}
+
+input {
+  display: block;
+  padding: 12px 20px;
+  width: 350px;
+  border:1px solid rgb(34, 216, 185);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#contenedorPagar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#contenedorPagar h2 {
+  color: rgb(34, 216, 185);
+}
+
+#comprar {
+  background-color: rgb(34, 216, 185);
+  padding: 10px;
+  display: block;
+  color: white;
+  cursor: pointer;
+  transition: background-color .3s;
+  text-align: center;
+  border-radius: 7px;
+  font-size: 14px;
+  border: none;
+  width: 350px;
+}
+
+#comprar:hover {
+  background-color: teal;
+}
+
+#contenedorPagar li{
+  margin-bottom: 15px;
+}
